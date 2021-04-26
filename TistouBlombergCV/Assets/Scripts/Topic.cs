@@ -46,15 +46,29 @@ public class Topic : MonoBehaviour
     }
     void TurnOn()
     {
-        OpenButton.gameObject.SetActive(true);
+        CreateOpenButton();
     }
     void TurnOff()
     {
-        OpenButton.gameObject.SetActive(false);
+        Destroy(OpenButton);
+    }
+    void CreateOpenButton()
+    {
+        OpenButton = Instantiate(OpenButtonPrefab, Canvas.transform);
+        OpenButton.GetComponent<OpenButton>().SetTarget(transform);
+        OpenButton.GetComponent<Button>().onClick.AddListener(
+            () => OnClickOpenButton(OpenButton)
+            );
+        OpenButton.GetComponentInChildren<Text>().text = name;
+    }
+    void OnClickOpenButton(GameObject openButton)
+    {
+        Open();
+        Destroy(openButton);
     }
     void CreateBackButton()
     {
-        GameObject backButton = Instantiate(BackButtonPrefab, RootCanvas.transform);
+        GameObject backButton = Instantiate(BackButtonPrefab, Canvas.transform);
         backButton.GetComponent<Button>().onClick.AddListener(
             () => OnClickBackButton(backButton)
             );
@@ -66,7 +80,12 @@ public class Topic : MonoBehaviour
     }
     private void Awake()
     {
-        ParentTopic = GetComponentInParent<Topic>();
+        Canvas = GameObject.FindGameObjectWithTag("MainCanvas");
+        ParentTopic = transform.parent.GetComponent<Topic>();
+        if (ParentTopic == null)
+        {
+            TurnOn();
+        }
         foreach (Transform child in transform)
         {
             var topic = child.GetComponent<Topic>();
@@ -77,12 +96,15 @@ public class Topic : MonoBehaviour
         }
     }
 
-    public Button OpenButton;
+    
     public GameObject BackButtonPrefab;
+    public GameObject OpenButtonPrefab;
     public CinemachineVirtualCameraBase CM;
     public GameObject Description;
-    public GameObject RootCanvas;
     public Topic ParentTopic;
     public List<Topic> Subtopics;
-    
+
+    GameObject OpenButton;
+    GameObject Canvas;
+
 }

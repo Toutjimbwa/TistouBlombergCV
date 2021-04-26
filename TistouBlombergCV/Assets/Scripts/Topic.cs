@@ -26,14 +26,14 @@ public class Topic : MonoBehaviour
     {
         foreach (Topic topic in Subtopics)
         {
-            topic.gameObject.SetActive(true);
+            topic.TurnOn();
         }
     }
     void TurnOffSubtopics()
     {
         foreach (Topic topic in Subtopics)
         {
-            topic.gameObject.SetActive(false);
+            topic.TurnOff();
         }
     }
     void TurnOnDescription()
@@ -81,14 +81,14 @@ public class Topic : MonoBehaviour
     private void Awake()
     {
         Canvas = GameObject.FindGameObjectWithTag("MainCanvas");
-        ParentTopic = transform.parent.GetComponent<Topic>();
+        ParentTopic = transform.parent.GetComponentInParent<Topic>();
         if (ParentTopic == null)
         {
             TurnOn();
         }
-        foreach (Transform child in transform)
+        foreach (Transform child in SubTopicsGO.transform)
         {
-            var topic = child.GetComponent<Topic>();
+            var topic = child.GetComponentInChildren<Topic>();
             if(topic != null)
             {
                 Subtopics.Add(topic);
@@ -102,6 +102,7 @@ public class Topic : MonoBehaviour
     public CinemachineVirtualCameraBase CM;
     public GameObject Description;
     public Topic ParentTopic;
+    public GameObject SubTopicsGO;
     public List<Topic> Subtopics;
 
     GameObject OpenButton;

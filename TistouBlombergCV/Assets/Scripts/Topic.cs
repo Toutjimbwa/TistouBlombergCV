@@ -94,6 +94,8 @@ public class Topic : MonoBehaviour
                 Subtopics.Add(topic);
             }
         }
+        Description.SetActive(false);
+        CM.gameObject.SetActive(false);
     }
 
     

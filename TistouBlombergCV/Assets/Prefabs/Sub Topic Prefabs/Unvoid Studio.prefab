@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &535762964369847175
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1034254507276867469, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034254507276867470, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034254507276867470, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -55.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034254507276867471, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 12.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034254507921759353, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034254507921759355, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_text
+      value: Founder of Unvoid Studio, a hobby organisation to get Game Dev Experience
+        through serious projects
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099837999, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_Name
+      value: Unvoid Studio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 557
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 403
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484803060099838003, guid: 03eed59c936ec5343a4472bfb2de68da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03eed59c936ec5343a4472bfb2de68da, type: 3}

@@ -26,7 +26,7 @@ public class Topic : MonoBehaviour
     {
         foreach (Topic topic in Subtopics)
         {
-            topic.TurnOn();
+            if(topic.gameObject.activeInHierarchy) topic.TurnOn();
         }
     }
     void TurnOffSubtopics()
